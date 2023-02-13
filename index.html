@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- MOBILE FIRST -->
+    <link rel="stylesheet" href="estilos/mobile-first.css" media="all">
+
+    <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" href="estilos/media-queries.css">
+
+    <!-- GOOGLE ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@1" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="imagem">
+            
+        </section>
+        <section id="login">
+            <h1>
+                Login
+            </h1>
+            <p>
+                Olá, seja bem-vindo novamente! Coloque seus dados para acessar o site:
+            </p>
+            <form action="cadastro.php" method="post" autocomplete="off">
+
+                <div class="cadastro">
+                    <label for="iemail">
+                        <span class="material-symbols-rounded">
+                            mail
+                        </span>
+                    </label>
+                    <input class="campo" type="email" name="email" id="iemail" autocomplete="off" placeholder="fulano@email.com" required>
+                </div>
+
+                <div class="cadastro">
+                    <label for="isenha">
+                        <span class="material-symbols-rounded">
+                            vpn_key
+                        </span>
+                    </label>
+                    <input class="campo" type="password" name="senha" id="isenha" autocomplete="off" placeholder="Insira sua senha" required minlength="8" maxlength="15">
+                </div>
+
+                <div id="botoes">
+                    <input type="submit" value="Acessar">
+                    <button>
+                        Esqueci minha senha
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

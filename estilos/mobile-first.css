@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* CORES:
+    azul-escuro: #122459;
+    azul-claro: #1C4AA6;
+    amarelo: #F2CA50; 
+    rosa: #F28599;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor01: #122459;
+    --cor02: #1C4AA6;
+    --cor03: #F2CA50;
+    --cor04: #F28599;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #122459;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--cor02);
+    width: 75vw;
+    max-width: 370px;
+    height: 80vh;
+    border: 5px solid var(--cor02);
+    border-radius: 20px;
+    box-shadow: 0px 7px 10px rgba(31, 31, 31, 0.527);
+    overflow: hidden;
+    padding: 15px;
+    transition: width .5s, height .5s;
+}
+
+/* -- IMAGEM -- */
+
+section#imagem {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.856)) ,url(../imagem/imagem.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479)
+}
+
+/* -- LOGIN -- */
+
+section#login {
+    padding: 20px;
+}
+
+section#login > h1 {
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--cor03);
+    font-size: 1.5em;
+}
+
+section#login > p {
+    color: rgb(223, 223, 223);
+    margin: 10px 0px;
+    font-size: 0.8em;
+    text-align: left;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+}
+
+div.cadastro {
+    background-color: var(--cor01);
+    margin: 10px 0;
+    padding: 8px 10px;
+    gap: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+label {
+    height: 24px;
+}
+
+input.campo {
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 3px 8px;
+}
+
+div#botoes {
+    margin-top: 15px;
+}
+
+input[type=submit] {
+    margin: auto;
+    display: block;
+    width: 80%;
+    background: white linear-gradient(to bottom, #F28599, #df7a8c);
+    border: 0px;
+    border-radius: 5px;
+    padding: 7.5px;
+    cursor: pointer;
+    color: rgb(19, 19, 19);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 7.5px;
+}
+
+input[type=submit]:hover {
+    background: #d37587;
+}
+
+button {
+    margin: auto;
+    display: block;
+    width: 80%;
+    background: white linear-gradient(to bottom, white, rgb(228, 228, 228));
+    border: 0px;
+    border-radius: 5px;
+    padding: 7.5px;
+    cursor: pointer;
+    color: rgb(19, 19, 19);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: rgb(212, 212, 212);
+}
